@@ -19,7 +19,7 @@ export default function Home(props) {
 
         return (
             <>
-                {data.totale > 0 ? <div key={data.carte_id} className="alert alert-success" role="alert"> Date:{data.date}Ticket {data.totale} DH  de Carte {data.carte_id}</div>}
+                {data.totale > 0 ? <div key={data.carte_id} className="alert alert-success" role="alert">Date:{data.date} Recharge {data.totale} DH pour la Carte {data.carte_id}</div> : <div className="alert alert-danger" role="alert"> Date:{data.date} Ticket {data.totale} DH  de Carte {data.carte_id}</div>}
             </>
         );
     });

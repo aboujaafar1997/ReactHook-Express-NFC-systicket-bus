@@ -33,7 +33,7 @@ export default function Home(props) {
                 setcarte({ ...resultat, solde: +resultat.solde - 4 });
                 var audio = new Audio('don.mp3');
                 audio.play();
-                setdon("-4 DH Merci 😃😃");
+                setdon("-4 DH Merci "+resultat.prenom+" 😃😃");
             } else {
                 var audio = new Audio('erreur.mp3');
                 audio.play();
@@ -120,7 +120,7 @@ export default function Home(props) {
     }, [log]);
     return (
         <React.Fragment>
-            <h6 className="float-right mr-5">Totale:{totale} DH</h6>
+            <h4 className="float-right m-2 text-white">Totale:{totale} DH</h4>
             <h1 className="text-center bg-dark text-white p-2">{don}</h1>
             <div className="container">
                 <div className="row ">

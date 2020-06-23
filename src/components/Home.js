@@ -37,7 +37,7 @@ export default function Home(props) {
             } else {
                 var audio = new Audio('erreur.mp3');
                 audio.play();
-                setdon("Solde est insuffisant! recheger votre carte svp 😁😁");
+                setdon("Solde est insuffisant! recharger votre carte svp 😁😁");
             }
         } catch (error) {
             setdon("Erreur de serveur" + error);
